@@ -169,7 +169,8 @@
 ## ローカルでの動作方法
 
 下記のコマンドを実行して、リポジトリをクローンしてください。
-git clone https://github.com/onotake/street-app.git
+
+- git clone https://github.com/onotake/street-app.git
 
 ## 動作環境
 
