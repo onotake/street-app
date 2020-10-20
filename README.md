@@ -1,4 +1,4 @@
-# テーブル設計
+# Streeters
 
 ## user テーブル
 
@@ -82,6 +82,24 @@
 
 ![StreetApps](https://user-images.githubusercontent.com/62535314/95812883-6e5c8000-0d51-11eb-9940-f6ceedb6969a.png)
 
+
+## ローカルでの動作方法
+
+### 下記のコマンドを実行して、リポジトリをクローンしてください。
+
+- git clone https://github.com/onotake/street-app.git
+
+### 動作環境
+
+- Ruby 2.6.5
+
+- Ruby on Rails 6.0.3.4
+
+- rbenv 1.1.2
+
+- Bundler 2.1.4
+
+- Gem 3.0.3
 
 
 
