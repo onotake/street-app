@@ -1,0 +1,12 @@
+<body>
+  <%= yield %>
+  <div class="contents row">
+    <% @posts.each do |post| %>
+      <div class="content_post">
+        <p><%= post.caption %></p>
+      </div>
+    <% end %>
+  </div>
+</body>
+
+
