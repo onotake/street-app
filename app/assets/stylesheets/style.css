@@ -947,6 +947,7 @@ div.contents.row div.content_post span.name {
   bottom: 30px;
   z-index: 2;
   font-size: 13px;
+  color: #000;
 }
 
 div.contents.row div.content_post span.name a {
