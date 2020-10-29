@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: :index
+  before_action :post_find, only: [:show, :edit, :update, :destroy]
   def index
     @posts = Post.includes(:user).order("created_at DESC")
   end
@@ -24,20 +25,20 @@ class PostsController < ApplicationController
   end
 
   def update
-    if @post.update(post_params)
-      redirect_to post_path(post_params)
-    else
-      render :edit
-    end
+    @post.update(post_params)
   end
 
   def destroy
-    post = Post.find(params[:id])
+    @post.destroy
   end
 
   private
 
   def post_params
     params.require(:post).permit(:caption, :image).merge(user_id: current_user.id)
+  end
+
+  def post_find
+    @post = Post.find(params[:id])
   end
 end
