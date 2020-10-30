@@ -23,7 +23,7 @@
               </li>
             </ul>
             </span>
-            <%# <%= link_to "投稿する", new_tweet_path, class: "post" %> %>
+            <%= link_to "投稿する", new_post_path, class: "post" %>
           </div>
         <% else %>
           <div class="grid-6">
@@ -35,10 +35,9 @@
     </header>
     <%= yield %>
     <footer>
-      <p>
-        Copyright StreetApps 2020.
-      </p>
+    <p>
+      Copyright StreetApps 2020.
+    </p>
     </footer>
   </body>
 </html>
-
