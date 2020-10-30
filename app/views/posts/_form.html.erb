@@ -1,0 +1,5 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <%= form.file_field :image, placeholder: "Image " %>
+  <%= form.text_area :caption, placeholder: "caption", rows: "10" %>
+  <%= form.submit "SEND" %>
+<% end %>
