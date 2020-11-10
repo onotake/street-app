@@ -1,6 +1,9 @@
 <div class="contents row">
   <div class="container">
-    <h3>編集する</h3>
+    <%= form_with(model: @post, local: true) do |form| %>
+      <h3>編集する</h3>
+    <%= render 'layouts/error_messages', model: form.object %>
     <%= render partial: "form", locals: { post: @post } %>
+    <% end %>
   </div>
 </div>
