@@ -141,9 +141,9 @@
 
 ## tag テーブル
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| tag_name | string | null: false |
+| Column   | Type   | Options                       |
+| -------- | ------ | ----------------------------- |
+| tag_name | string | null: false , uniqueness: true|
 
 ### Association
 
