@@ -1,5 +1,6 @@
-<%= form_with(model: post, local: true) do |form| %>
-  <%= form.file_field :image, placeholder: "Image " %>
+<%= form_with(model: @post, url: posts_path, local: true) do |form| %>
+  <%= form.file_field :image, direct_upload: true %>
   <%= form.text_area :caption, placeholder: "caption", rows: "10" %>
+  <%= form.text_area :tag_name, placeholder: "tag", rows: "1" %>
   <%= form.submit "SEND" %>
 <% end %>
