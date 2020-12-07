@@ -8,18 +8,12 @@ class PostTag
     validates :image
   end
 
-  def initialize(post_params,tag_params)
-    @post = post_params
-    @tag = tag_params
-  end
-
-
-
   def save
-    post = Post.new(@post)
-    post.image.attach(@post[:image])
+    return false if invalid?
+    post = Post.new(caption: caption, user_id: user_id)
+    post.image.attach(image)
     post.save
-    tag = Tag.where(@tag).first_or_initialize
+    tag = Tag.where(tag_name: tag_name).first_or_initialize
     tag.save
     PostTagRelation.create(post_id: post.id, tag_id: tag.id)
   end

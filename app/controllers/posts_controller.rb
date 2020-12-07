@@ -6,12 +6,12 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post_tag = PostTag.new
   end
 
   def create
-    @post = PostTag.new(post_params, tag_params)
-    if @post.save
+    @post_tag = PostTag.new(post_tag_params)
+    if @post_tag.save
       redirect_to root_path
     else
       render :new
@@ -35,12 +35,8 @@ class PostsController < ApplicationController
   end
 
   private
-  def post_params
-    params.require(:post).permit(:caption, :image).merge(user_id: current_user.id)
-  end
-
-  def tag_params
-    params.require(:post).permit(:tag_name)
+  def post_tag_params
+    params.require(:post_tag).permit(:caption, :image, :tag_name).merge(user_id: current_user.id)
   end
 
   def post_find
