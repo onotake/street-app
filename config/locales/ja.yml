@@ -1,7 +1,7 @@
 ja:
-
-activerecord:
-  attributes:
-    post:
-      caption: キャプション
-      image: 画像
+  activemodel:
+    attributes:
+      post_tag:
+        caption: キャプション
+        image: 画像ファイル
+        tag_name: タグ
