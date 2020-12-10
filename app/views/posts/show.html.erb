@@ -1,5 +1,5 @@
 <div class="contents row">
-  <div class="content_post" style="background-image: url(<%= @post.image %>);">
+  <div class="content_post">
     <% if user_signed_in? && current_user.id == @post.user_id %>
       <div class="more">
         <span><%= image_tag 'arrow_top.png' %></span>
@@ -19,7 +19,9 @@
       <a href="/users/<%= @post.user.id %>">
         <span>投稿者</span><%= @post.user.name %>
       </a>
-    </span>
+      <span id="post_<%= @post.id %>">
+      <%= render 'like', post: @post %>
+      </span>
   </div>
 
   <div class="container">

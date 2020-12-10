@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   end
 
   resources :tags, only: :show
+
+  resources :post do
+    resources :likes, only: [:create, :destroy]
+  end
 end
