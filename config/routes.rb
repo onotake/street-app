@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   resources :tags, only: :show
 
   resources :post do
-    resources :likes, only: [:create, :destroy]
+    resource :likes, only: [:create, :destroy]
   end
 end
