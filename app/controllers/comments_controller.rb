@@ -1,11 +1,14 @@
 class CommentsController < ApplicationController
   def create
-    comment = Comment.create(comment_params)
-    if comment.valid?
-      comment.save
+    @post = Post.find(params[:post_id])
+    @comments = @post.comments.includes(:user)
+
+    @comment = Comment.new(comment_params)
+    if @comment.valid?
+      @comment.save
       redirect_to "/posts/#{comment.post.id}" 
     else
-      render "/posts/#{comment.post.id}" 
+      render template: "posts/show"
     end
   end
 

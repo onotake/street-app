@@ -1,4 +1,8 @@
 ja:
+  activerecord:
+    attributes:
+      comment:
+        comment: コメント
   activemodel:
     attributes:
       post_tag:

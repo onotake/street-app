@@ -20,7 +20,7 @@
         <span>投稿者</span><%= @post.user.name %>
       </a>
       <span id="post_<%= @post.id %>">
-      <%= render 'like', post: @post %>
+      <%= render 'posts/like', post: @post %>
       </span>
   </div>
 
