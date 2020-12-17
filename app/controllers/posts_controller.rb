@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params)
+    @post.update(post_tag_params)
   end
 
   def destroy
