@@ -25,6 +25,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post_tag = PostTag.new
   end
 
   def update
