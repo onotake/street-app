@@ -153,7 +153,7 @@ pre {
 /*
  * Set consistent quote types. */
 q {
-  quotes: "“""”""‘""’";
+  quotes: "“" "”" "‘" "’";
 }
 
 /*
@@ -446,9 +446,21 @@ i {
 }
 
 .button {
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 ul {
@@ -547,8 +559,8 @@ ul li {
   clear: both;
 }
 
-.row.collapse>.column,
-.row.collapse>.columns {
+.row.collapse > .column,
+.row.collapse > .columns {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -598,7 +610,6 @@ ul li {
 }
 
 @media only screen and (max-width: 40em) {
-
   .row {
     width: 100%;
     padding: 0 20px !important;
@@ -625,7 +636,6 @@ ul li {
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
   .row .grid-1,
   .row .grid-2,
   .row .grid-3,
@@ -638,7 +648,7 @@ ul li {
 body,
 html {
   height: 100%;
-  background-color: #f5f5f3;
+  background-color: #fff;
 }
 
 body {
@@ -655,18 +665,21 @@ body {
   line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
-  color: #666;
-  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  color: BLACK;
+  font-family: "Unica One", "Avenir", "游ゴシック", "YuGothic",
+    "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6",
+    "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック",
+    "MS P Gothic", sans-serif;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #666;
+  color: BLACK;
 }
 
 a:hover {
-  color: #57C3E9;
+  color: WHITE;
 }
 
 .bold {
@@ -675,7 +688,7 @@ a:hover {
 
 .serif,
 div.contents.row div.content_post p {
-  font-family: 'ヒラギノ角ゴ Pro W6';
+  font-family: "ヒラギノ角ゴ Pro W6";
 }
 
 .ultra {
@@ -683,7 +696,7 @@ div.contents.row div.content_post p {
 }
 
 ::selection {
-  background: #D8D8D8;
+  background: #d8d8d8;
 }
 
 .transition,
@@ -707,8 +720,8 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 8px 20px;
   font-size: 14px;
-  border: 2px solid #57C3E9;
-  color: #57C3E9;
+  border: 2px solid BLACK;
+  color: BLACK;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -717,8 +730,8 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #9bdbf2;
-  color: #9bdbf2;
+  border-color: WHITE;
+  color: WHITE;
 }
 
 .title {
@@ -737,8 +750,8 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 
 header.header {
   padding: 10px;
-  border-bottom: 1px solid #D8D8D8;
-  background-color: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #adadad;
   position: fixed;
   top: 0;
   left: 0;
@@ -788,16 +801,17 @@ header.header .user_nav span {
   font-size: 1em;
   cursor: pointer;
   position: relative;
+  color: BLACK;
 }
 
 header.header .user_nav span:after {
-  content: '▼';
-  font-size: .7em;
+  content: "▼";
+  font-size: 0.7em;
   margin-left: -4px;
 }
 
 header.header .user_nav span:hover ul {
-  color: #57C3E9;
+  color: WHITE;
   display: block;
 }
 
@@ -806,20 +820,20 @@ header.header .user_nav ul {
   position: absolute;
   top: 46px;
   right: 0;
-  border-left: 1px solid #d8d8d8;
-  border-right: 1px solid #d8d8d8;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header.header .user_nav ul li {
-  background-color: #f0f0f0;
+  background-color: #adadad;
 }
 
 header.header .user_nav ul li a {
   display: block;
   padding: 10px 20px;
   text-align: left;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .form {
@@ -872,7 +886,7 @@ div.contents.row div.content_post {
 }
 
 div.contents.row div.content_post:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -926,7 +940,7 @@ div.contents.row div.content_post .more ul.more_list li a {
 }
 
 div.contents.row div.content_post .more ul.more_list li a:hover {
-  background-color: #57C3E9;
+  background-color: BLACK;
   color: #fff;
 }
 
@@ -952,12 +966,12 @@ div.contents.row div.content_post span.name {
 
 div.contents.row div.content_post span.name a {
   display: block;
-  color: #aaa;
+  color: BLACK;
 }
 
 div.contents.row div.content_post span.name a:hover {
   text-decoration: underline;
-  color: #aaa;
+  color: #adadad;
 }
 
 div.contents.row div.content_post span.name span {
@@ -983,13 +997,13 @@ form textarea {
   width: 100%;
   margin: 5px 0 15px;
   padding: 10px;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-color: BLACK;
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -997,7 +1011,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: #adadad;
 }
 
 .container {
@@ -1022,7 +1036,7 @@ form input[type="submit"]:hover {
 }
 
 .comments a {
-  color: #57C3E9;
+  color: #57c3e9;
 }
 
 .comments a:hover {
@@ -1032,7 +1046,7 @@ form input[type="submit"]:hover {
 footer {
   margin: 30px auto;
   padding: 10px;
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 footer p {
