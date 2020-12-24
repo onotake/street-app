@@ -1,6 +1,6 @@
 <%= form_with(model: post_tag, url: posts_path, local: true) do |form| %>
   <%= render 'layouts/error_messages', model: form.object %>
-  <%= form.file_field :image, direct_upload: true %>
+  <%= form.file_field :image %>
   <%= form.text_area :caption, placeholder: "caption", rows: "10" %>
   <%= form.text_area :tag_name, placeholder: "tag", rows: "1" %>
   <%= form.submit "SEND" %>
