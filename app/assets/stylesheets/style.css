@@ -476,8 +476,8 @@ ul li {
 
 .row {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 24%;
+  margin-right: 5%;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 660px;
@@ -1065,4 +1065,12 @@ footer p {
 
 .search-form .search-btn {
   width: 10%;
+}
+
+.flex {
+  display: flex;
+}
+
+.twitter {
+  justify-content: ;
 }
