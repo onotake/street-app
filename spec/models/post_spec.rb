@@ -7,13 +7,17 @@ RSpec.describe User, type: :model do
       @post = FactoryBot.build(:post)
     end
 
-    context '値が空ではDBに保存できない' do
+    context '値が存在すると保存できる' do
       it "imageとcaptionが存在すれば登録できること" do
         expect(@post).to be_valid
       end
+    end
+
+    context '値が空ではDBに保存できない' do
       it "imageが空では登録できないこと" do
         @post.image = nil
         @post.valid?
+        binding.pry
         expect(@post.errors.full_messages).to include("Image can't be blank")
       end
       it "captionが空では登録できないこと" do
