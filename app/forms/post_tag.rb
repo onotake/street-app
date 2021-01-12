@@ -4,7 +4,6 @@ class PostTag
 
   with_options presence: true do
     validates :caption, length: { maximum: 1000 }
-    validates :tag_name
     validates :image
   end
 
