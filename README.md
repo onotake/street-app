@@ -90,6 +90,8 @@
 
 - CSS
 
+- JavaScript
+
 - JQuery
 
 
