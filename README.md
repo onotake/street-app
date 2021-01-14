@@ -1,6 +1,6 @@
 # Streeters
 
-- URL:
+- URL:　https://street-apps.herokuapp.com/
 
 ### テスト用アカウント
 
