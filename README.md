@@ -2,7 +2,7 @@
 
 - URL:　https://street-apps.herokuapp.com/
 
-- Basic認証: ユーザー名:takeru  
+- Basic認証: ユーザー名:takeru、 Password:0609
 
 ### テスト用アカウント
 
