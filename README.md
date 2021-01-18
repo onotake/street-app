@@ -2,6 +2,8 @@
 
 - URL:　https://street-apps.herokuapp.com/
 
+- Basic認証: ユーザー名:takeru  
+
 ### テスト用アカウント
 
 - Email: admin@admin.com
