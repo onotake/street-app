@@ -16,7 +16,7 @@
 ### 主な機能
 
 - ストリートファッション専門のSNS投稿アプリです！
-![Uploading streetapp1.jpg…]()
+![streetapp1](https://user-images.githubusercontent.com/62535314/105825576-19443180-6003-11eb-96a4-2837ffa8aa91.jpg)
 
 - コメント機能やいいね機能を実装することでユーザー同士のコミュニケーションが円滑に!
 
