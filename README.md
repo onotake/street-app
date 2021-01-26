@@ -17,11 +17,15 @@
 
 - ストリートファッション専門のSNS投稿アプリです！
 
+
 ![street2](https://user-images.githubusercontent.com/62535314/105825900-78a24180-6003-11eb-9096-d2f91b101da9.jpg)
+
 
 - コメント機能やいいね機能を実装することでユーザー同士のコミュニケーションが円滑に!
 
+
 <img width="703" alt="street3" src="https://user-images.githubusercontent.com/62535314/105826152-c5861800-6003-11eb-9a45-728343e67b4d.png">
+
 
 ### その他機能
 
