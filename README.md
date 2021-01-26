@@ -16,7 +16,7 @@
 ### 主な機能
 
 - ストリートファッション専門のSNS投稿アプリです！
-https://gyazo.com/63afb6dd41dfdcefc8ab294859aa58f1
+![Uploading streetapp1.jpg…]()
 
 - コメント機能やいいね機能を実装することでユーザー同士のコミュニケーションが円滑に!
 
