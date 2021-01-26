@@ -21,6 +21,8 @@
 
 - コメント機能やいいね機能を実装することでユーザー同士のコミュニケーションが円滑に!
 
+<img width="703" alt="street3" src="https://user-images.githubusercontent.com/62535314/105826152-c5861800-6003-11eb-9a45-728343e67b4d.png">
+
 ### その他機能
 
 - 投稿編集 / 削除機能
