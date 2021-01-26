@@ -1,4 +1,4 @@
-# Streeters
+# Street Apps
 
 - URL:　https://street-apps.herokuapp.com/
 
