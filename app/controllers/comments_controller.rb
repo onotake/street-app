@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     if @comment.valid?
       @comment.save
-      redirect_to "/posts/#{comment.post.id}" 
+      redirect_to "/posts/#{@comment.post.id}" 
     else
       render template: "posts/show"
     end
